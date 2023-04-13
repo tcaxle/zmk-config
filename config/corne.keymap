@@ -44,19 +44,19 @@
 
     base {
       bindings = <
-      &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp G      &kp J  &kp L      &kp U    &kp Y  &kp SEMI  &kp ESCAPE
-&kp BACKSPACE  &kp A  &kp R     &kp S  &kp T      &kp D      &kp H  &kp N      &kp E    &kp I     &kp O     &kp DEL
-    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B      &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
-                             &kp LGUI  &mo 1  &kp SPACE    &kp RET  &mo 2   &kp RALT
+      &kp TAB  &kp Q  &kp W     &kp F  &kp P                   &kp G              &kp J  &kp L      &kp U    &kp Y  &kp SEMI  &kp ESCAPE
+&kp BACKSPACE  &kp A  &kp R     &kp S  &kp T                   &kp D              &kp H  &kp N      &kp E    &kp I     &kp O     &kp DEL
+    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V                   &kp B              &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH   &kp RSHFT
+                             &kp LGUI  &mo 1  &mt LEFT_CONTROL SPACE    &mt RCTRL ENTER  &mo 2   &kp RALT
       >;
     };
 
     raise {
       bindings = <
-   &trans     &kp END  &kp PAGE_DOWN      &kp UP  &kp PAGE_UP    &kp HOME    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS     &trans
-   &trans      &trans       &kp LEFT    &kp DOWN    &kp RIGHT      &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE     &trans
-&sk LCTRL  &kp K_UNDO    &kp K_PASTE  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp KP_COMMA     &kp KP_DOT  &sk RCTRL
-                                          &trans       &trans      &trans    &kp KP_NUMBER_0            &mo 3     &kp KP_EQUAL
+&trans     &kp END  &kp PAGE_DOWN      &kp UP  &kp PAGE_UP    &kp HOME    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS  &trans
+&trans      &trans       &kp LEFT    &kp DOWN    &kp RIGHT      &trans    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
+&trans  &kp K_UNDO    &kp K_PASTE  &kp K_COPY  &kp K_PASTE  &kp K_REDO    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp KP_COMMA     &kp KP_DOT  &trans
+                                       &trans       &trans      &trans    &kp KP_NUMBER_0            &mo 3     &kp KP_EQUAL
       >;
     };
 
