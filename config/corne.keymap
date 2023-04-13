@@ -62,10 +62,10 @@
 
     lower {
       bindings = <
-&trans  &kp EXCL  &kp DOUBLE_QUOTES  &kp NON_US_HASH  &kp DLLR  &kp PRCNT    &kp CARET   &kp AMPS  &kp STAR  &kp LPAR  &kp RPAR     &trans
-&trans    &trans             &trans           &trans    &trans     &trans    &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH  &kp GRAVE
-&trans    &trans             &trans           &trans    &trans     &trans    &kp UNDER   &kp PLUS  &kp LBRC  &kp RBRC  &kp PIPE  &kp TILDE
-                                              &trans     &mo 3     &trans       &trans     &trans    &trans
+&trans  &kp LS(NUMBER_1)  &kp LS(NUMBER_2)  &kp LS(NUMBER_3)  &kp LS(NUMBER_4)  &kp LS(NUMBER_5)    &kp RS(NUMBER_6)  &kp RS(NUMBER_7)  &kp RS(NUMBER_8)  &kp RS(NUMBER_9)  &kp RS(NUMBER_0)     &trans
+&trans            &trans            &trans            &trans            &trans            &trans           &kp MINUS         &kp EQUAL          &kp LBKT          &kp RBKT          &kp BSLH  &kp GRAVE
+&trans            &trans            &trans            &trans            &trans            &trans           &kp UNDER          &kp PLUS          &kp LBRC          &kp RBRC          &kp PIPE  &kp TILDE
+                                                      &trans             &mo 3            &trans              &trans            &trans            &trans
       >;
     };
 
