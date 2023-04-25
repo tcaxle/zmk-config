@@ -57,10 +57,10 @@
 
     raise {
       bindings = <
-&kp ESC  &kp BACKSPACE  &kp PAGE_DOWN    &kp UP  &kp PAGE_UP  &kp DELETE    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS  &trans
-&kp TAB       &kp HOME       &kp LEFT  &kp DOWN    &kp RIGHT     &kp END    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
- &trans         &trans         &trans    &trans       &trans      &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp KP_COMMA     &kp KP_DOT  &trans
-                                         &trans       &trans      &trans    &kp KP_NUMBER_0            &mo 3     &kp KP_EQUAL
+    &trans    &trans  &kp PAGE_DOWN    &kp UP  &kp PAGE_UP   &trans    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS  &trans
+&kp DELETE  &kp HOME       &kp LEFT  &kp DOWN    &kp RIGHT  &kp END    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &trans
+    &trans    &trans         &trans    &trans       &trans   &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3     &kp KP_COMMA     &kp KP_DOT  &trans
+                                       &trans       &trans   &trans    &kp KP_NUMBER_0            &mo 3     &kp KP_EQUAL
       >;
     };
 
