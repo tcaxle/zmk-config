@@ -29,6 +29,21 @@
         <&kp LCTRL>,
         <&kp LEFT_META>;
     };
+    llayers: llayers {
+      compatible = "zmk,behavior-tap-dance";
+      label = "LLAYERS";
+      #binding-cells = <0>;
+      bindings =
+        <&mo 1>,
+        <&mo 4>,
+        <&tog 5>;
+    };
+    rlayers: rlayers {
+      compatible = "zmk,behavior-tap-dance";
+      label = "RLAYERS";
+      #binding-cells = <0>;
+      bindings = <&mo 2>;
+    };
   };
 
   combos {
@@ -37,6 +52,11 @@
     capslock {
       bindings = <&kp CAPS>;
       key-positions = <24 35>;
+    };
+
+    new_combo {
+      bindings = <&sl 3>;
+      key-positions = <37 40>;
     };
   };
 
@@ -48,10 +68,10 @@
 
     base {
       bindings = <
-       &kp TAB  &kp Q  &kp W  &kp F  &kp P      &kp G        &kp J  &kp L      &kp U    &kp Y  &kp SEMI    &kp INS
- &kp BACKSPACE  &kp A  &kp R  &kp S  &kp T      &kp D        &kp H  &kp N      &kp E    &kp I     &kp O    &kp DEL
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &lmod  &mo 1  &kp SPACE    &kp ENTER  &mo 2      &rmod
+       &kp TAB  &kp Q  &kp W  &kp F     &kp P      &kp G        &kp J     &kp L      &kp U    &kp Y  &kp SEMI    &kp INS
+ &kp BACKSPACE  &kp A  &kp R  &kp S     &kp T      &kp D        &kp H     &kp N      &kp E    &kp I     &kp O    &kp DEL
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp K     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &lmod  &llayers  &kp SPACE    &kp ENTER  &rlayers      &rmod
       >;
     };
 
@@ -77,13 +97,37 @@
       label = "punctuation";
     };
 
-    both {
+    configuration {
       bindings = <
 &trans      &trans        &trans        &trans            &trans  &bt BT_SEL 0    &bt BT_SEL 3  &trans  &trans  &trans  &trans  &trans
 &trans  &kp K_STOP  &kp K_VOL_DN  &kp K_VOL_UP  &kp K_PLAY_PAUSE  &bt BT_SEL 1    &bt BT_SEL 4  &trans  &trans  &trans  &trans  &trans
 &trans      &trans        &trans        &trans            &trans  &bt BT_SEL 2      &bt BT_CLR  &trans  &trans  &trans  &trans  &trans
                                         &trans            &trans        &trans          &trans  &trans  &trans
       >;
+
+      label = "configuration";
+    };
+
+    altkeypad {
+      bindings = <
+  &trans     &kp MINUS  &kp PLUS  &kp N7  &kp N8  &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC      &kp FSLH  &kp STAR  &kp N4  &kp N5  &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
+  &trans  &kp KP_EQUAL   &kp DOT  &kp N1  &kp N2  &kp N3    &trans  &trans  &trans  &trans  &trans  &trans
+                                  &kp N0  &trans  &trans    &trans  &trans  &trans
+      >;
+
+      label = "altkeypad";
+    };
+
+    altium {
+      bindings = <
+       &kp ESC      &kp X  &kp SPACE            &kp UP  &kp LS(SPACE)  &kp STAR    &none  &none  &none  &none  &none  &none
+       &kp TAB      &kp Y   &kp LEFT          &kp DOWN      &kp RIGHT     &kp L    &none  &none  &none  &none  &none  &none
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)         &kp LC(C)      &kp LC(V)     &none    &none  &none  &none  &none  &none  &none
+                                      &kp LEFT_CONTROL         &tog 5   &kp RET    &none  &none  &none
+      >;
+
+      label = "altium";
     };
   };
 };
