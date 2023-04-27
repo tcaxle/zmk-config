@@ -13,16 +13,21 @@
 
 / {
   behaviors {
-    hm: homerow_mods {
-      compatible = "zmk,behavior-hold-tap";
-      label = "HOMEROW_MODS";
-      #binding-cells = <2>;
-      tapping-term-ms = <150>;
-      quick-tap-ms = <0>;
-      flavor = "tap-preferred";
+    lmod: lmod {
+      compatible = "zmk,behavior-tap-dance";
+      label = "LMOD";
+      #binding-cells = <0>;
       bindings =
-        <&kp>,
-        <&kp>;
+        <&kp LCTRL>,
+        <&kp LALT>;
+    };
+    rmod: rmod {
+      compatible = "zmk,behavior-tap-dance";
+      label = "RMOD";
+      #binding-cells = <0>;
+      bindings =
+        <&kp LCTRL>,
+        <&kp LEFT_META>;
     };
   };
 
@@ -32,16 +37,6 @@
     capslock {
       bindings = <&kp CAPS>;
       key-positions = <24 35>;
-    };
-
-    lctrl {
-      bindings = <&kp LCTRL>;
-      key-positions = <38 24>;
-    };
-
-    rctrl {
-      bindings = <&kp RCTRL>;
-      key-positions = <35 39>;
     };
   };
 
@@ -53,10 +48,10 @@
 
     base {
       bindings = <
-       &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp G        &kp J  &kp L          &kp U    &kp Y  &kp SEMI    &kp INS
- &kp BACKSPACE  &kp A  &kp R     &kp S  &kp T      &kp D        &kp H  &kp N          &kp E    &kp I     &kp O    &kp DEL
-&kp LEFT_SHIFT  &kp Z  &kp X     &kp C  &kp V      &kp B        &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &kp LALT  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_META
+       &kp TAB  &kp Q  &kp W  &kp F  &kp P      &kp G        &kp J  &kp L      &kp U    &kp Y  &kp SEMI    &kp INS
+ &kp BACKSPACE  &kp A  &kp R  &kp S  &kp T      &kp D        &kp H  &kp N      &kp E    &kp I     &kp O    &kp DEL
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &lmod  &mo 1  &kp SPACE    &kp ENTER  &mo 2      &rmod
       >;
     };
 
