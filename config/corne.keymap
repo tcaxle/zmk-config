@@ -55,22 +55,26 @@
       >;
     };
 
-    raise {
+    navigation {
       bindings = <
 &kp ESC    &trans  &kp PAGE_DOWN    &kp UP  &kp PAGE_UP  &kp KP_MULTIPLY    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS         &trans
 &kp DEL  &kp HOME       &kp LEFT  &kp DOWN    &kp RIGHT          &kp END    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BACKSPACE
  &trans    &trans         &trans    &trans       &trans           &trans    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3       &kp KP_DOT   &kp KP_EQUAL         &trans
-                                    &trans       &trans           &trans    &kp KP_NUMBER_0            &mo 3           &trans
+                                    &trans       &trans           &trans             &trans            &mo 3        &kp KP_N0
       >;
+
+      label = "navigation";
     };
 
-    lower {
+    punctuation {
       bindings = <
 &kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6           &mt N6 F7         &mt N7 F8          &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
 &trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp RS(N6)        &kp RS(N7)         &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
 &trans    &kp NUBS    &kp PIPE    &kp NUHS   &kp MINUS   &kp UNDER    &kp LS(NUMBER_2)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
                                     &trans       &mo 3      &trans              &trans            &trans             &trans
       >;
+
+      label = "punctuation";
     };
 
     both {
