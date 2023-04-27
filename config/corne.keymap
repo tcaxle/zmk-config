@@ -53,10 +53,10 @@
 
     base {
       bindings = <
-      &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp G        &kp J  &kp L          &kp U    &kp Y  &kp SEMI    &kp INS
-&kp BACKSPACE  &kp A  &kp R     &kp S  &kp T      &kp D        &kp H  &kp N          &kp E    &kp I     &kp O    &kp DEL
-    &kp LSHFT  &kp Z  &kp X     &kp C  &kp V      &kp B        &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                             &kp LALT  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_META
+       &kp TAB  &kp Q  &kp W     &kp F  &kp P      &kp G        &kp J  &kp L          &kp U    &kp Y  &kp SEMI    &kp INS
+ &kp BACKSPACE  &kp A  &kp R     &kp S  &kp T      &kp D        &kp H  &kp N          &kp E    &kp I     &kp O    &kp DEL
+&kp LEFT_SHIFT  &kp Z  &kp X     &kp C  &kp V      &kp B        &kp K  &kp M      &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &kp LALT  &mo 1  &kp SPACE    &kp ENTER  &mo 2  &kp LEFT_META
       >;
     };
 
@@ -71,10 +71,10 @@
 
     lower {
       bindings = <
-&kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6            &mt N6 F7         &mt N7 F8        &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)           &kp RS(N6)        &kp RS(N7)       &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
-&trans    &kp NUBS    &kp PIPE   &kp GRAVE   &kp MINUS   &kp UNDER    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp NON_US_HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
-                                    &trans       &mo 3      &trans               &trans            &trans           &trans
+&kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6           &mt N6 F7         &mt N7 F8          &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp RS(N6)        &kp RS(N7)         &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
+&trans    &kp NUBS    &kp PIPE    &kp NUHS   &kp MINUS   &kp UNDER    &kp LS(NUMBER_2)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
+                                    &trans       &mo 3      &trans              &trans            &trans             &trans
       >;
     };
 
