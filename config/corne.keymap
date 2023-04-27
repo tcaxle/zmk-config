@@ -124,7 +124,7 @@
        &kp ESC      &kp X  &kp SPACE            &kp UP  &kp LS(SPACE)  &kp STAR    &none  &none  &none  &none  &none  &none
        &kp TAB      &kp Y   &kp LEFT          &kp DOWN      &kp RIGHT     &kp L    &none  &none  &none  &none  &none  &none
 &kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)         &kp LC(C)      &kp LC(V)     &none    &none  &none  &none  &none  &none  &none
-                                      &kp LEFT_CONTROL         &tog 5   &kp RET    &none  &none  &none
+                                      &kp LEFT_CONTROL         &trans   &kp RET    &none  &none  &none
       >;
 
       label = "altium";
