@@ -61,10 +61,10 @@
 
     lower {
       bindings = <
-&kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6     &mt N6 F7         &mt N7 F8        &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp RS(N6)        &kp RS(N7)       &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
-&trans    &kp NUBS      &trans      &trans      &trans      &trans     &kp GRAVE  &kp SINGLE_QUOTE  &kp NON_US_HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
-                                    &trans       &mo 3      &trans        &trans            &trans           &trans
+&kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6            &mt N6 F7         &mt N7 F8        &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)           &kp RS(N6)        &kp RS(N7)       &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
+&trans    &kp NUBS    &kp PIPE   &kp GRAVE   &kp MINUS   &kp UNDER    &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &kp NON_US_HASH  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
+                                    &trans       &mo 3      &trans               &trans            &trans           &trans
       >;
     };
 
