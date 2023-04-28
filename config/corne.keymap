@@ -13,22 +13,6 @@
 
 / {
   behaviors {
-    lmod: lmod {
-      compatible = "zmk,behavior-tap-dance";
-      label = "LMOD";
-      #binding-cells = <0>;
-      bindings =
-        <&kp LCTRL>,
-        <&kp LALT>;
-    };
-    rmod: rmod {
-      compatible = "zmk,behavior-tap-dance";
-      label = "RMOD";
-      #binding-cells = <0>;
-      bindings =
-        <&kp LCTRL>,
-        <&kp LEFT_META>;
-    };
     llayers: llayers {
       compatible = "zmk,behavior-tap-dance";
       label = "LLAYERS";
@@ -43,6 +27,15 @@
       label = "RLAYERS";
       #binding-cells = <0>;
       bindings = <&mo 2>;
+    };
+    sh: sh {
+      compatible = "zmk,behavior-hold-tap";
+      label = "SH";
+      bindings =
+        <&kp>,
+        <&sk>;
+
+      #binding-cells = <2>;
     };
   };
 
@@ -68,10 +61,10 @@
 
     base {
       bindings = <
-       &kp TAB  &kp Q  &kp W  &kp F     &kp P      &kp G        &kp J     &kp L      &kp U    &kp Y  &kp SEMI    &kp INS
- &kp BACKSPACE  &kp A  &kp R  &kp S     &kp T      &kp D        &kp H     &kp N      &kp E    &kp I     &kp O    &kp DEL
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C     &kp V      &kp B        &kp K     &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &lmod  &llayers  &kp SPACE    &kp ENTER  &rlayers      &rmod
+       &kp TAB  &kp Q  &kp W               &kp F     &kp P      &kp G        &kp J     &kp L               &kp U    &kp Y  &kp SEMI    &kp INS
+ &kp BACKSPACE  &kp A  &kp R               &kp S     &kp T      &kp D        &kp H     &kp N               &kp E    &kp I     &kp O    &kp DEL
+&kp LEFT_SHIFT  &kp Z  &kp X               &kp C     &kp V      &kp B        &kp K     &kp M           &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &sh LEFT_ALT LCTRL  &llayers  &kp SPACE    &kp ENTER  &rlayers  &sh LEFT_WIN RCTRL
       >;
     };
 
