@@ -33,7 +33,7 @@
 
         xc {
             bindings = <&kp ESC>;
-            key-positions = <>;
+            key-positions = <26 27>;
         };
     };
 
