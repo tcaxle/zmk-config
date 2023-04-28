@@ -36,13 +36,14 @@
                 <&sk LEFT_SHIFT>,
                 <&kp CAPS>;
         };
-        winalt: winalt {
+        ctrlaltwin: ctrlaltwin {
             compatible = "zmk,behavior-tap-dance";
-            label = "WINALT";
+            label = "CTRLALTWIN";
             #binding-cells = <0>;
             bindings =
-                <&kp LEFT_WIN>,
-                <&kp LALT>;
+                <&sk LCTRL>,
+                <&kp LALT>,
+                <&kp LEFT_WIN>;
         };
         layers: layers {
             compatible = "zmk,behavior-tap-dance";
@@ -65,10 +66,10 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
- &kp TAB   &ht NUMBER_1 Q     &ht NUMBER_2 W  &ht NUMBER_3 F  &ht NUMBER_4 P  &ht NUMBER_5 G    &none  &none  &none  &none  &none  &none
-&kp BSPC   &ht NUMBER_6 A     &ht NUMBER_7 R  &ht NUMBER_8 S  &ht NUMBER_9 T  &ht NUMBER_0 D    &none  &none  &none  &none  &none  &none
-  &scaps  &ht KP_DIVIDE Z  &ht KP_MULTIPLY X  &ht KP_MINUS C   &ht KP_PLUS V  &ht KP_EQUAL B    &none  &none  &none  &none  &none  &none
-                                                     &winalt         &layers       &kp SPACE    &none  &none  &none
+ &kp TAB  &ht NUMBER_1 Q  &ht NUMBER_2 W      &ht NUMBER_3 F  &ht NUMBER_4 P  &ht NUMBER_5 G    &none  &none  &none  &none  &none  &none
+&kp BSPC           &kp A           &kp R               &kp S           &kp T           &kp D    &none  &none  &none  &none  &none  &none
+  &scaps      &ht NUBS Z     &ht GRAVE X  &ht SINGLE_QUOTE C     &ht MINUS V     &ht EQUAL B    &none  &none  &none  &none  &none  &none
+                                                 &ctrlaltwin         &layers       &kp SPACE    &none  &none  &none
             >;
         };
 
@@ -80,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-&ht GRAVE ESC       &ht LS(NUMBER_1) SEMI      &ht LS(NUMBER_2) Y      &ht LS(NUMBER_3) U  &ht LS(NUMBER_4) L   &ht LS(NUMBER_5) J     &none   &none   &none   &none   &none   &none
-   &kp DELETE          &ht LS(NUMBER_6) O      &ht LS(NUMBER_7) I      &ht LS(NUMBER_8) E  &ht LS(NUMBER_9) N   &ht LS(NUMBER_0) H     &none   &none   &none   &none  &trans  &trans
-    &sk LCTRL  &ht NON_US_BACKSLASH SLASH  &ht NON_US_HASH PERIOD  &ht SINGLE_QUOTE COMMA  &ht LEFT_BRACKET M  &ht RIGHT_BRACKET K    &trans  &trans  &trans  &trans  &trans  &trans
-                                                                                    &none              &trans                &none     &none  &trans   &none
+   &kp ESC  &ht NUMBER_0 SEMI           &ht NUMBER_9 Y           &ht NUMBER_8 U    &ht NUMBER_7 L     &ht NUMBER_6 J     &none   &none   &none   &none   &none   &none
+&kp DELETE              &kp O                    &kp I                    &kp E             &kp N              &kp H     &none   &none   &none   &none  &trans  &trans
+    &scaps     &ht NUBS SLASH  &ht LEFT_BRACKET PERIOD  &ht RIGHT_BRACKET COMMA  &ht LEFT_BRACE M  &ht RIGHT_BRACE K    &trans  &trans  &trans  &trans  &trans  &trans
+                                                                          &none            &trans              &none     &none  &trans   &none
             >;
         };
 
