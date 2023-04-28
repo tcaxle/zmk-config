@@ -11,9 +11,24 @@
     combos {
         compatible = "zmk,combos";
 
-        home-row-smash {
+        arst {
             bindings = <&kp ENTER>;
             key-positions = <16 15 14 13>;
+        };
+
+        qw {
+            bindings = <&sk LEFT_META>;
+            key-positions = <1 2>;
+        };
+
+        wf {
+            bindings = <&sk LCTRL>;
+            key-positions = <2 3>;
+        };
+
+        fp {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <3 4>;
         };
     };
 
@@ -61,7 +76,7 @@
        &kp TAB  &ht NUMBER_1 Q  &ht NUMBER_2 W      &ht NUMBER_3 F  &ht NUMBER_4 P  &ht NUMBER_5 G    &none  &none  &none  &none  &none  &none
       &kp BSPC           &kp A           &kp R               &kp S           &kp T           &kp D    &none  &none  &none  &none  &none  &none
 &sk LEFT_SHIFT      &ht NUBS Z      &ht NUHS X  &ht SINGLE_QUOTE C     &ht MINUS V     &ht EQUAL B    &none  &none  &none  &none  &none  &none
-                                                      &ctrlaltmeta         &layers       &kp SPACE    &none  &none  &none
+                                                             &mo 2           &mo 1       &kp SPACE    &none  &none  &none
             >;
         };
 
