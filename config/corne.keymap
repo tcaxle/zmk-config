@@ -81,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp ESC    &ht NUMBER_0 SEMI          &ht NUMBER_9 Y   &ht NUMBER_8 U      &ht NUMBER_7 L       &ht NUMBER_6 J     &none   &none   &none   &none   &none   &none
-&kp DELETE                &kp O                   &kp I            &kp E               &kp N                &kp H     &none   &none   &none   &none  &trans  &trans
-    &trans  &ht KP_DIVIDE SLASH  &ht KP_MULTIPLY PERIOD  &ht GRAVE COMMA  &ht LEFT_BRACKET M  &ht RIGHT_BRACKET K    &trans  &trans  &trans  &trans  &trans  &trans
-                                                                  &trans              &trans               &trans     &none  &trans   &none
+   &kp ESC       &ht NUMBER_0 SEMI            &ht NUMBER_9 Y   &ht NUMBER_8 U  &ht NUMBER_7 L     &ht NUMBER_6 J     &none   &none   &none   &none   &none   &none
+&kp DELETE                   &kp O                     &kp I            &kp E           &kp N              &kp H     &none   &none   &none   &none  &trans  &trans
+    &trans  &ht LEFT_BRACKET SLASH  &ht RIGHT_BRACKET PERIOD  &ht GRAVE COMMA     &ht UNDER M  &ht KP_MULTIPLY K    &trans  &trans  &trans  &trans  &trans  &trans
+                                                                       &trans          &trans             &trans     &none  &trans   &none
             >;
         };
 
