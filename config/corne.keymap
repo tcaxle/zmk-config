@@ -68,7 +68,7 @@
             bindings = <
        &kp TAB  &ht NUMBER_1 Q  &ht NUMBER_2 W      &ht NUMBER_3 F  &ht NUMBER_4 P  &ht NUMBER_5 G    &none  &none  &none  &none  &none  &none
       &kp BSPC           &kp A           &kp R               &kp S           &kp T           &kp D    &none  &none  &none  &none  &none  &none
-&sk LEFT_SHIFT      &ht NUBS Z     &ht GRAVE X  &ht SINGLE_QUOTE C     &ht MINUS V     &ht EQUAL B    &none  &none  &none  &none  &none  &none
+&sk LEFT_SHIFT      &ht NUBS Z      &ht NUHS X  &ht SINGLE_QUOTE C     &ht MINUS V     &ht EQUAL B    &none  &none  &none  &none  &none  &none
                                                        &ctrlaltwin         &layers       &kp SPACE    &none  &none  &none
             >;
         };
@@ -81,10 +81,10 @@
             //                    | GUI |     | SPC |   | ENT |     | ALT |
 
             bindings = <
-   &kp ESC  &ht NUMBER_0 SEMI           &ht NUMBER_9 Y           &ht NUMBER_8 U    &ht NUMBER_7 L     &ht NUMBER_6 J     &none   &none   &none   &none   &none   &none
-&kp DELETE              &kp O                    &kp I                    &kp E             &kp N              &kp H     &none   &none   &none   &none  &trans  &trans
-    &trans     &ht NUBS SLASH  &ht LEFT_BRACKET PERIOD  &ht RIGHT_BRACKET COMMA  &ht LEFT_BRACE M  &ht RIGHT_BRACE K    &trans  &trans  &trans  &trans  &trans  &trans
-                                                                         &trans            &trans             &trans     &none  &trans   &none
+   &kp ESC    &ht NUMBER_0 SEMI          &ht NUMBER_9 Y   &ht NUMBER_8 U      &ht NUMBER_7 L       &ht NUMBER_6 J     &none   &none   &none   &none   &none   &none
+&kp DELETE                &kp O                   &kp I            &kp E               &kp N                &kp H     &none   &none   &none   &none  &trans  &trans
+    &trans  &ht KP_DIVIDE SLASH  &ht KP_MULTIPLY PERIOD  &ht GRAVE COMMA  &ht LEFT_BRACKET M  &ht RIGHT_BRACKET K    &trans  &trans  &trans  &trans  &trans  &trans
+                                                                  &trans              &trans               &trans     &none  &trans   &none
             >;
         };
 
