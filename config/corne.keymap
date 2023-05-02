@@ -32,7 +32,7 @@
       compatible = "zmk,behavior-hold-tap";
       label = "SH";
       bindings =
-        <&kp>,
+        <&sk>,
         <&sk>;
 
       #binding-cells = <2>;
