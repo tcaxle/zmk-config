@@ -61,6 +61,16 @@
                 <&mo 1>,
                 <&mo 2>;
         };
+        mht: mht {
+            compatible = "zmk,behavior-hold-tap";
+            label = "MHT";
+            bindings =
+                <&mo>,
+                <&kp>;
+
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+        };
     };
 
     keymap {
@@ -77,7 +87,7 @@
        &kp TAB  &ht NUMBER_1 Q  &ht NUMBER_2 W      &ht NUMBER_3 F  &ht NUMBER_4 P  &ht NUMBER_5 G    &none  &none  &none  &none  &none  &none
       &kp BSPC           &kp A           &kp R               &kp S           &kp T           &kp D    &none  &none  &none  &none  &none  &none
 &sk LEFT_SHIFT      &ht NUBS Z      &ht NUHS X  &ht SINGLE_QUOTE C     &ht MINUS V     &ht EQUAL B    &none  &none  &none  &none  &none  &none
-                                                             &mo 3     &lt 2 ENTER     &lt 1 SPACE    &none  &none  &none
+                                                             &mo 3    &mht 2 ENTER    &mht 1 SPACE    &none  &none  &none
             >;
         };
 
