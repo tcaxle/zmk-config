@@ -77,10 +77,10 @@
 
     navigation {
       bindings = <
-     &kp ESC  &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END  &kp ENTER    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS         &trans
-    &kp BSPC  &kp LEFT         &kp UP   &kp DOWN  &kp RIGHT    &kp DEL    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BACKSPACE
-&kp CAPSLOCK     &none          &none      &none      &none      &none    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3       &kp KP_DOT   &kp KP_EQUAL         &trans
-                                          &trans     &trans     &trans             &trans            &mo 3        &kp KP_N0
+ &kp ESC  &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END  &kp ENTER    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS         &trans
+&kp BSPC  &kp LEFT         &kp UP   &kp DOWN  &kp RIGHT    &kp DEL    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BACKSPACE
+  &trans     &none          &none      &none      &none      &none    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3       &kp KP_DOT   &kp KP_EQUAL         &trans
+                                      &trans     &trans     &trans             &trans            &mo 3        &kp KP_N0
       >;
 
       label = "navigation";
