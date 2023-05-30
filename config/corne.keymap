@@ -130,7 +130,7 @@
     punctuation {
       bindings = <
 &kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6           &mt N6 F7         &mt N7 F8          &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp RS(N6)        &kp RS(N7)         &kp RS(N8)        &kp RS(N9)         &kp RS(N0)   &trans
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)        &kp LS(N7)         &kp LS(N8)        &kp LS(N9)         &kp LS(N0)   &trans
 &trans    &kp NUBS    &kp PIPE    &kp NUHS   &kp MINUS   &kp UNDER    &kp LS(NUMBER_2)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
                                     &trans      &trans      &trans              &trans            &trans             &trans
       >;
