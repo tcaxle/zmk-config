@@ -17,10 +17,7 @@
       compatible = "zmk,behavior-tap-dance";
       label = "LLAYERS";
       #binding-cells = <0>;
-      bindings =
-        <&mo 5>,
-        <&mo 1>,
-        <&tog 5>;
+      bindings = <&mo 5>, <&mo 1>, <&tog 5>;
     };
     rlayers: rlayers {
       compatible = "zmk,behavior-tap-dance";
@@ -32,17 +29,13 @@
       compatible = "zmk,behavior-tap-dance";
       label = "LMODS";
       #binding-cells = <0>;
-      bindings =
-        <&sk LCTRL>,
-        <&sk LEFT_ALT>;
+      bindings = <&sk LCTRL>, <&sk LEFT_ALT>;
     };
     rmods: rmods {
       compatible = "zmk,behavior-tap-dance";
       label = "RMODS";
       #binding-cells = <0>;
-      bindings =
-        <&sk RCTRL>,
-        <&sk LEFT_META>;
+      bindings = <&sk RCTRL>, <&sk LEFT_META>;
     };
   };
 
@@ -98,18 +91,18 @@
 
     base {
       bindings = <
-       &kp TAB  &kp Q  &kp W  &kp F  &kp P      &kp G        &kp J  &kp L      &kp U    &kp Y  &kp SEMI    &kp INS
- &kp BACKSPACE  &kp A  &kp R  &kp S  &kp T      &kp D        &kp H  &kp N      &kp E    &kp I     &kp O    &kp DEL
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V      &kp B        &kp K  &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
-                              &mo 1  &mo 2  &kp SPACE    &kp ENTER  &mo 3      &mo 4
+&kp TAB         &kp Q  &kp W  &kp F  &kp P  &kp G        &kp J      &kp L  &kp U      &kp Y    &kp SEMI  &kp INS
+&kp BACKSPACE   &kp A  &kp R  &kp S  &kp T  &kp D        &kp H      &kp N  &kp E      &kp I    &kp O     &kp DEL
+&kp LEFT_SHIFT  &kp Z  &kp X  &kp C  &kp V  &kp B        &kp K      &kp M  &kp COMMA  &kp DOT  &kp FSLH  &kp RSHFT
+                              &mo 1  &mo 2  &kp SPACE    &kp ENTER  &mo 3  &mo 4
       >;
     };
 
     altkeypad {
       bindings = <
-  &trans     &kp MINUS  &kp PLUS  &kp N7  &kp N8     &kp N9    &trans  &trans  &trans  &trans  &trans  &trans
-&kp BSPC      &kp FSLH  &kp STAR  &kp N4  &kp N5     &kp N6    &trans  &trans  &trans  &trans  &trans  &trans
-  &trans  &kp KP_EQUAL   &kp DOT  &kp N1  &kp N2     &kp N3    &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp MINUS     &kp PLUS  &kp N7  &kp N8  &kp N9       &trans  &trans  &trans  &trans  &trans  &trans
+&kp BSPC  &kp FSLH      &kp STAR  &kp N4  &kp N5  &kp N6       &trans  &trans  &trans  &trans  &trans  &trans
+&trans    &kp KP_EQUAL  &kp DOT   &kp N1  &kp N2  &kp N3       &trans  &trans  &trans  &trans  &trans  &trans
                                   &trans  &kp N0  &kp ENTER    &trans  &trans  &trans
       >;
 
@@ -118,10 +111,10 @@
 
     navigation {
       bindings = <
- &kp ESC  &kp HOME  &kp PAGE_DOWN  &kp PG_UP    &kp END  &kp ENTER    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9      &kp KP_PLUS   &kp KP_MINUS         &trans
-&kp BSPC  &kp LEFT         &kp UP   &kp DOWN  &kp RIGHT    &kp DEL    &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BACKSPACE
-  &trans     &none          &none      &none      &none      &none    &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3       &kp KP_DOT   &kp KP_EQUAL         &trans
-                                      &trans     &trans     &trans          &kp ENTER        &kp KP_N0           &trans
+&kp ESC   &kp HOME  &kp PAGE_DOWN  &kp PG_UP  &kp END    &kp ENTER    &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_PLUS      &kp KP_MINUS   &trans
+&kp BSPC  &kp LEFT  &kp UP         &kp DOWN   &kp RIGHT  &kp DEL      &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_MULTIPLY  &kp KP_DIVIDE  &kp BACKSPACE
+&trans    &none     &none          &none      &none      &none        &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL   &trans
+                                   &trans     &trans     &trans       &kp ENTER        &kp KP_N0        &trans
       >;
 
       label = "navigation";
@@ -129,10 +122,10 @@
 
     punctuation {
       bindings = <
-&kp F1   &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6           &mt N6 F7         &mt N7 F8          &mt N8 F9        &mt N9 F10         &mt N0 F11  &kp F12
-&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)          &kp LS(N6)        &kp LS(N7)         &kp LS(N8)        &kp LS(N9)         &kp LS(N0)   &trans
-&trans    &kp NUBS    &kp PIPE    &kp NUHS   &kp MINUS   &kp UNDER    &kp LS(NUMBER_2)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET   &trans
-                                    &trans      &trans      &trans              &trans            &trans             &trans
+&kp F1  &mt N1 F2   &mt N2 F3   &mt N3 F4   &mt N4 F5   &mt N5 F6     &mt N6 F7         &mt N7 F8         &mt N8 F9          &mt N9 F10        &mt N0 F11         &kp F12
+&trans  &kp LS(N1)  &kp LS(N2)  &kp LS(N3)  &kp LS(N4)  &kp LS(N5)    &kp LS(N6)        &kp LS(N7)        &kp LS(N8)         &kp LS(N9)        &kp LS(N0)         &trans
+&trans  &kp NUBS    &kp PIPE    &kp NUHS    &kp MINUS   &kp UNDER     &kp LS(NUMBER_2)  &kp SINGLE_QUOTE  &kp DOUBLE_QUOTES  &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans
+                                &trans      &trans      &trans        &trans            &trans            &trans
       >;
 
       label = "punctuation";
@@ -140,10 +133,10 @@
 
     altium {
       bindings = <
-       &kp ESC      &kp X  &kp SPACE            &kp UP  &kp LS(SPACE)  &kp STAR    &none  &none   &none  &none  &none  &none
-       &kp TAB      &kp Y   &kp LEFT          &kp DOWN      &kp RIGHT     &kp L    &none  &none   &none  &none  &none  &none
-&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)         &kp LC(C)      &kp LC(V)     &none    &none  &none   &none  &none  &none  &none
-                                      &kp LEFT_CONTROL         &trans   &kp RET    &none  &none  &trans
+&kp ESC         &kp X      &kp SPACE  &kp UP            &kp LS(SPACE)  &kp STAR    &none  &none  &none   &none  &none  &none
+&kp TAB         &kp Y      &kp LEFT   &kp DOWN          &kp RIGHT      &kp L       &none  &none  &none   &none  &none  &none
+&kp LEFT_SHIFT  &kp LC(Z)  &kp LC(X)  &kp LC(C)         &kp LC(V)      &none       &none  &none  &none   &none  &none  &none
+                                      &kp LEFT_CONTROL  &trans         &kp RET     &none  &none  &trans
       >;
 
       label = "altium";
@@ -151,13 +144,22 @@
 
     configuration {
       bindings = <
-&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4            &trans  &trans  &trans  &trans  &trans  &trans
-&trans        &trans    &bt BT_PRV    &bt BT_CLR    &bt BT_NXT        &trans    &kp KP_NUMLOCK  &trans  &trans  &trans  &trans  &trans
-&trans        &trans        &trans        &trans        &trans        &trans            &trans  &trans  &trans  &trans  &trans  &trans
-                                          &trans        &trans        &trans            &trans  &trans  &trans
+&trans  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4    &trans          &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &bt BT_PRV    &bt BT_CLR    &bt BT_NXT    &trans          &kp KP_NUMLOCK  &trans  &trans  &trans  &trans  &trans
+&trans  &trans        &trans        &trans        &trans        &trans          &trans          &trans  &trans  &trans  &trans  &trans
+                                    &trans        &trans        &trans          &trans          &trans  &trans
       >;
 
       label = "configuration";
+    };
+
+    layer_6 {
+      bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
+      >;
     };
   };
 };
