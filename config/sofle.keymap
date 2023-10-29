@@ -48,6 +48,11 @@
             bindings = <&tog 6>;
             key-positions = <57 58 59>;
         };
+
+        left_space {
+            bindings = <&kp SPACE>;
+            key-positions = <40 39>;
+        };
     };
 
     keymap {
@@ -177,11 +182,11 @@
 
         mirror {
             bindings = <
-&trans   &trans    &trans   &trans     &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp SEMI  &kp Y    &kp U      &kp L   &kp J                     &trans  &trans  &trans  &trans  &trans  &trans
-&kp DEL  &kp O     &kp I    &kp E      &kp N   &kp H                     &trans  &trans  &trans  &trans  &trans  &trans
-&trans   &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp K   &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                   &trans   &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+&kp MINUS  &kp N0    &kp N9   &kp N8     &kp N7  &kp N6                    &kp N5  &kp N4  &kp N3  &kp N2  &kp N1  &kp ESC
+&kp SQT    &kp SEMI  &kp Y    &kp U      &kp L   &kp J                     &kp G   &kp P   &kp F   &kp W   &kp Q   &kp TAB
+&kp DEL    &kp O     &kp I    &kp E      &kp N   &kp H                     &kp D   &kp T   &kp S   &kp R   &kp A   &kp BSPC
+&trans     &kp FSLH  &kp DOT  &kp COMMA  &kp M   &kp K   &trans    &trans  &kp B   &kp V   &kp C   &kp X   &kp Z   &trans
+                     &trans   &trans     &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
             >;
         };
     };
