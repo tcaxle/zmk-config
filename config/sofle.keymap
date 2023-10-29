@@ -25,7 +25,6 @@
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
     };
-
     right_encoder: encoder_right {
         compatible = "alps,ec11";
         label = "RIGHT_ENCODER";
@@ -94,7 +93,7 @@
 &kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
 &kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                          &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp SQT
 &kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                          &kp H   &kp N     &kp E          &kp I              &kp O     &kp DEL
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 4     &kp K_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 4     &kp C_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
                     &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mo 1   &kp RET    &kp SPACE   &mo 2   &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
