@@ -76,11 +76,11 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                        &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
-&kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                         &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp SQT
-&kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                         &kp H   &kp N     &kp E          &kp I              &kp O     &kp DEL
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 5     &tog 6     &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
-                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mo 1   &kp RET    &kp SPACE  &mo 1   &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
+&kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                         &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
+&kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                          &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp SQT
+&kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                          &kp H   &kp N     &kp E          &kp I              &kp O     &kp DEL
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 5     &kp C_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mo 1   &kp RET    &kp SPACE   &mo 1   &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
@@ -161,18 +161,6 @@
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
             label = "left-encoder-alt";
-        };
-
-        right-encoder-alt {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "right-encoder-alt";
         };
     };
 };
