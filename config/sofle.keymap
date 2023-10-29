@@ -77,8 +77,8 @@
             >;
 
             sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN_ARROW>,
-                <&inc_dec_kp C_VOL_UP C_VOL_UP>;
+                <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>,
+                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         left-mod {
