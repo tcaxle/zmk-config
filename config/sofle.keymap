@@ -109,11 +109,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&kp GRAVE       &trans           &trans     &trans           &trans     &trans                                   &trans    &trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_N7  &kp KP_N8        &kp KP_N9  &kp KP_MULTIPLY                          &trans    &trans     &trans    &trans            &trans             &kp NON_US_HASH
-&kp DELETE      &kp KP_SUBTRACT  &kp KP_N4  &kp KP_N5        &kp KP_N6  &kp KP_PLUS                              &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN         &kp INS            &kp BACKSPACE
-&trans          &kp KP_N0        &kp KP_N1  &kp KP_NUMBER_2  &kp KP_N3  &kp KP_DOT       &trans       &trans     &kp END   &kp LEFT   &kp DOWN  &kp RIGHT         &kp NUBS           &trans
-                                 &trans     &trans           &trans     &trans           &kp ENTER    &kp SPACE  &trans    &trans     &trans    &trans
+&kp GRAVE       &trans           &trans           &trans     &trans     &trans                                   &trans    &trans     &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
+&kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_MULTIPLY  &kp KP_N7  &kp KP_N8  &kp KP_NUMBER_9                          &trans    &trans     &trans    &trans            &trans             &kp NON_US_HASH
+&kp DELETE      &kp KP_SUBTRACT  &kp KP_PLUS      &kp KP_N4  &kp KP_N5  &kp KP_NUMBER_6                          &kp HOME  &kp PG_UP  &kp UP    &kp PG_DN         &kp INS            &kp BACKSPACE
+&trans          &kp KP_EQUAL     &kp KP_DOT       &kp KP_N1  &kp KP_N2  &kp KP_NUMBER_3  &trans       &trans     &kp END   &kp LEFT   &kp DOWN  &kp RIGHT         &kp NUBS           &trans
+                                 &trans           &trans     &kp KP_N0  &trans           &kp ENTER    &kp SPACE  &trans    &trans     &trans    &trans
             >;
         };
 
