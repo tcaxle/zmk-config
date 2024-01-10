@@ -22,6 +22,7 @@
         b-gpios = <&pro_micro 20 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
         steps = <80>;
     };
+
     right_encoder: encoder_right {
         compatible = "alps,ec11";
         label = "RIGHT_ENCODER";
@@ -41,18 +42,24 @@
     };
 
     behaviors {
+        mirror_mod: mirror_mod {
+            compatible = "zmk,behavior-tap-dance";
+            label = "MIRROR_MOD";
+            #binding-cells = <0>;
+            bindings = <&mo 6>, <&mo 1>, <&mo 7>;
+        };
     };
 
     combos {
         compatible = "zmk,combos";
 
-        macro {
-            bindings = <&sl 3>;
+        mirror {
+            bindings = <&sl 5>;
             key-positions = <50 51 52>;
         };
 
         qwerty {
-            bindings = <&tog 4>;
+            bindings = <&tog 3>;
             key-positions = <57 58 59>;
         };
 
@@ -88,7 +95,7 @@
 &kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                           &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
 &kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                            &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp GRAVE
 &kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                            &kp H   &kp N     &kp E          &kp I              &kp O     &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 5       &kp C_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 4       &kp C_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
                     &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mo 1   &kp SPACE    &kp ENTER   &mo 1   &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
@@ -135,18 +142,6 @@
             >;
         };
 
-        macro {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            label = "Macro";
-        };
-
         qwerty {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans     &trans   &trans    &trans
@@ -170,6 +165,54 @@
 
             sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
             label = "Base ⬌";
+        };
+
+        mirror_mod {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &mirror_mod  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Base Unmirrored";
+        };
+
+        base_mirrored {
+            bindings = <
+&kp MINUS  &kp N0    &kp N9     &kp N8     &kp N7    &kp N6                         &kp N5  &kp N4    &kp N3    &kp N2     &kp N1  &kp ESC
+&kp GRAVE  &kp SEMI  &kp Y      &kp U      &kp L     &kp J                          &kp G   &kp P     &kp F     &kp W      &kp Q   &kp TAB
+&kp SQT    &kp O     &kp I      &kp E      &kp N     &kp H                          &kp D   &kp T     &kp S     &kp R      &kp A   &kp BSPC
+&kp RSHFT  &kp FSLH  &kp DOT    &kp COMMA  &kp M     &kp K   &kp BSPC    &kp V      &kp B   &kp V     &kp C     &kp X      &kp Z   &kp LSHFT
+                     &kp RCTRL  &kp RGUI   &kp RALT  &trans  &kp RET     &kp SPACE  &trans  &kp LALT  &kp LGUI  &kp LCTRL
+            >;
+
+            label = "Base Mirrored";
+        };
+
+        mod_mirrored {
+            bindings = <
+&kp EQUAL  &kp LBKT  &kp RBKT   &trans    &trans         &trans                          &trans           &trans           &trans           &trans           &trans         &trans
+&trans     &trans    &trans     &trans    &trans         &trans                          &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &kp KP_NUMLOCK
+&kp POUND  &kp INS   &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp HOME                        &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &kp DEL
+&trans     &kp BSLH  &kp LEFT   &kp DOWN  &kp RIGHT      &kp END   &trans       &trans   &kp N1           &kp N2           &kp N3           &kp KP_DOT       &kp KP_EQUAL   &trans
+                     &trans     &trans    &trans         &trans    &kp SPACE    &kp RET  &trans           &kp KP_NUMBER_0  &trans           &trans
+            >;
+
+            label = "Mod Mirrored";
+        };
+
+        macro {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
+            >;
+
+            label = "Macro";
         };
     };
 };
