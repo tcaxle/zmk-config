@@ -54,7 +54,7 @@
         compatible = "zmk,combos";
 
         mirror {
-            bindings = <&sl 5>;
+            bindings = <&tog 5>;
             key-positions = <50 51 52>;
         };
 
@@ -169,11 +169,11 @@
 
         mirror_mod {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &mirror_mod  &trans    &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans                         &trans       &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans       &trans    &trans  &trans       &trans  &trans  &trans  &trans  &trans
+                &trans  &trans  &trans  &mirror_mod  &trans    &trans  &mirror_mod  &trans  &trans  &trans
             >;
 
             label = "Base Unmirrored";
