@@ -72,240 +72,280 @@
             bindings = <&kp M>;
             key-positions = <25 26 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LN {
             bindings = <&kp N>;
             key-positions = <25 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LP {
             bindings = <&kp P>;
             key-positions = <25 26 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LQ {
             bindings = <&kp Q>;
             key-positions = <13 14 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LU {
             bindings = <&kp U>;
             key-positions = <26 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LV {
             bindings = <&kp V>;
             key-positions = <13 15>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LW {
             bindings = <&kp W>;
             key-positions = <13 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LX {
             bindings = <&kp X>;
             key-positions = <13 14 15>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LZ {
             bindings = <&kp Z>;
             key-positions = <13 14 15 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LB {
             bindings = <&kp B>;
             key-positions = <25 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LC {
             bindings = <&kp C>;
             key-positions = <27 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LD {
             bindings = <&kp D>;
             key-positions = <15 14 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LF {
             bindings = <&kp F>;
             key-positions = <15 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LG {
             bindings = <&kp G>;
             key-positions = <14 15>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LH {
             bindings = <&kp H>;
             key-positions = <28 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LJ {
             bindings = <&kp J>;
             key-positions = <13 14>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LK {
             bindings = <&kp K>;
             key-positions = <25 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LL {
             bindings = <&kp L>;
             key-positions = <27 28 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LESC {
             bindings = <&kp ESCAPE>;
             key-positions = <25 15 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LTAB {
             bindings = <&kp TAB>;
             key-positions = <25 14 15 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LCTRL {
             bindings = <&sk LCTRL>;
             key-positions = <13 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LGUI {
             bindings = <&sk LEFT_GUI>;
             key-positions = <13 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LALT {
             bindings = <&sk LEFT_ALT>;
             key-positions = <13 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LSHIFT {
             bindings = <&sk LEFT_SHIFT>;
             key-positions = <13 14 15 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LSHIFTLOCK {
             bindings = <&kt LEFT_SHIFT>;
             key-positions = <15 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LCAPSLOCK {
             bindings = <&kp CAPS>;
             key-positions = <27 26 25 16>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LENTER {
             bindings = <&kp ENTER>;
             key-positions = <16 28>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LQUOTE {
             bindings = <&kp SINGLE_QUOTE>;
             key-positions = <16 27 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LSTOP {
             bindings = <&kp PERIOD>;
             key-positions = <16 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LCOMMA {
             bindings = <&kp COMMA>;
             key-positions = <16 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LSLASH {
             bindings = <&kp SLASH>;
             key-positions = <16 25>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LEXCLAMATION {
             bindings = <&kp EXCLAMATION>;
             key-positions = <14 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LSPACE {
             bindings = <&kp SPACE>;
             key-positions = <25 26 28 27>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LBACKSPACE {
             bindings = <&kp BACKSPACE>;
             key-positions = <28 15>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LDEL {
             bindings = <&kp DELETE>;
             key-positions = <15 26>;
             layers = <9>;
+            timeout-ms = <175>;
         };
 
         LARTSEY_L8 {
             bindings = <&kp KP_NUMBER_8>;
             key-positions = <14 15>;
             layers = <11>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_L7 {
             bindings = <&kp KP_N7>;
             key-positions = <15 16>;
             layers = <11>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_L0 {
             bindings = <&kp KP_NUMBER_0>;
             key-positions = <26 27>;
             layers = <11>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_L9 {
             bindings = <&kp KP_NUMBER_9>;
             key-positions = <27 28>;
             layers = <11>;
+            timeout-ms = <175>;
         };
 
         ARTSEY_LNAV {
             bindings = <&tog 10>;
             key-positions = <26 28 15>;
             layers = <9 10>;
+            timeout-ms = <175>;
         };
     };
 
