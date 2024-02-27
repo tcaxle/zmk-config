@@ -52,7 +52,7 @@
         compatible = "zmk,combos";
 
         qwerty {
-            bindings = <&tog 5>;
+            bindings = <&tog 4>;
             key-positions = <57 58 59>;
         };
 
@@ -71,7 +71,7 @@
         compatible = "zmk,keymap";
 
         base {
-            label = "Base ⬍";
+            label = "Base";
 
             // ------------------------------------------------------------------------------------------------------------
             // |   `   |  1  |  2  |  3   |  4   |  5   |                   |  6   |  7    |  8    |  9   |   0   |       |
@@ -81,23 +81,23 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                           &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
-&kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                            &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp GRAVE
-&kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                            &kp H   &kp N     &kp E          &kp I              &kp O     &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 4       &kp C_MUTE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
-                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &kp SPACE    &kp ENTER   &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
+&kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                                  &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
+&kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                                   &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp GRAVE
+&kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                                   &kp H   &kp N     &kp E          &kp I              &kp O     &kp SINGLE_QUOTE
+&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &kp C_MUTE    &kp C_PLAY_PAUSE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &kp SPACE     &kp ENTER         &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
         };
 
         mirrored {
             bindings = <
-&kp MINUS  &kp N0    &kp N9     &kp N8     &kp N7    &kp N6                      &kp N5  &kp N4    &kp N3    &kp N2     &kp N1  &kp ESC
-&kp GRAVE  &kp SEMI  &kp Y      &kp U      &kp L     &kp J                       &kp G   &kp P     &kp F     &kp W      &kp Q   &kp TAB
-&kp SQT    &kp O     &kp I      &kp E      &kp N     &kp H                       &kp D   &kp T     &kp S     &kp R      &kp A   &kp BSPC
-&kp RSHFT  &kp FSLH  &kp DOT    &kp COMMA  &kp M     &kp K   &kp BSPC    &kp V   &kp B   &kp V     &kp C     &kp X      &kp Z   &kp LSHFT
-                     &kp RCTRL  &kp RGUI   &kp RALT  &trans  &trans      &trans  &trans  &kp LALT  &kp LGUI  &kp LCTRL
+&kp MINUS  &kp N0    &kp N9     &kp N8     &kp N7    &kp N6                                  &kp N5  &kp N4    &kp N3    &kp N2     &kp N1  &kp ESC
+&kp GRAVE  &kp SEMI  &kp Y      &kp U      &kp L     &kp J                                   &kp G   &kp P     &kp F     &kp W      &kp Q   &kp TAB
+&kp SQT    &kp O     &kp I      &kp E      &kp N     &kp H                                   &kp D   &kp T     &kp S     &kp R      &kp A   &kp BSPC
+&kp RSHFT  &kp FSLH  &kp DOT    &kp COMMA  &kp M     &kp K   &kp C_PLAY_PAUSE    &kp C_MUTE  &kp B   &kp V     &kp C     &kp X      &kp Z   &kp LSHFT
+                     &kp RCTRL  &kp RGUI   &kp RALT  &trans  &trans              &trans      &trans  &kp LALT  &kp LGUI  &kp LCTRL
             >;
 
             label = "Mirrored";
@@ -133,19 +133,6 @@
 &trans          &kp KP_EQUAL     &kp KP_DOT       &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT         &kp NUBS           &trans
                                  &trans           &trans              &kp KP_N0           &trans              &trans    &trans  &trans         &trans    &trans    &trans
             >;
-        };
-
-        left-encoder-alt {
-            bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans                    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
-                &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans
-            >;
-
-            sensor-bindings = <&inc_dec_kp LEFT_ARROW RIGHT_ARROW>;
-            label = "Base ⬌";
         };
 
         qwerty {
