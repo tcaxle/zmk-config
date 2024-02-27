@@ -88,7 +88,7 @@
                     &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &kp SPACE     &kp ENTER         &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
+            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
         };
 
         mirrored {
