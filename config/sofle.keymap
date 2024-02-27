@@ -42,9 +42,9 @@
     behaviors {
         mtd: mtd {
             compatible = "zmk,behavior-tap-dance";
-            label = "MTD";
+            label = "Mod-Tap-Dance";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&mo 3>;
+            bindings = <&mo 2>, <&mo 3>, <&mo 5>;
         };
     };
 
@@ -88,9 +88,7 @@
                     &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &lt 1 SPACE    &lt 1 ENTER  &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings =
-                <&inc_dec_kp UP_ARROW DOWN>,
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>;
+            sensor-bindings = <&inc_dec_kp UP_ARROW DOWN>;
         };
 
         mirrored {
