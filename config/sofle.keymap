@@ -40,9 +40,9 @@
     conditional_layers { compatible = "zmk,conditional-layers"; };
 
     behaviors {
-        mod: mod {
+        mtd: mtd {
             compatible = "zmk,behavior-tap-dance";
-            label = "MOD";
+            label = "MTD";
             #binding-cells = <0>;
             bindings = <&mo 2>, <&mo 3>;
         };
@@ -85,7 +85,7 @@
 &kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                               &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp GRAVE
 &kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                               &kp H   &kp N     &kp E          &kp I              &kp O     &kp SINGLE_QUOTE
 &kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &tog 4         &kp C_MUTE   &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
-                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mod    &lt 1 SPACE    &lt 1 ENTER  &mod    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
+                    &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &lt 1 SPACE    &lt 1 ENTER  &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings =
