@@ -84,7 +84,7 @@
 &kp ESCAPE  &kp N1  &kp N2     &kp N3        &kp N4    &kp N5                                   &kp N6  &kp N7    &kp N8         &kp N9             &kp N0    &kp MINUS
 &kp TAB     &kp Q   &kp W      &kp F         &kp P     &kp G                                    &kp J   &kp L     &kp U          &kp Y              &kp SEMI  &kp GRAVE
 &kp BSPC    &kp A   &kp R      &kp S         &kp T     &kp D                                    &kp H   &kp N     &kp E          &kp I              &kp O     &kp SINGLE_QUOTE
-&kp LSHFT   &kp Z   &kp X      &kp C         &kp V     &kp B   &kp C_MUTE     &kp C_PLAY_PAUSE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &kp RSHFT
+&sk LSHIFT  &kp Z   &kp X      &kp C         &kp V     &kp B   &kp C_MUTE     &kp C_PLAY_PAUSE  &kp K   &kp M     &kp COMMA      &kp DOT            &kp FSLH  &sk RSHFT
                     &kp LCTRL  &kp LEFT_WIN  &kp LALT  &mtd    &lt 2 SPACE    &lt 2 ENTER       &mtd    &kp RALT  &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
@@ -96,7 +96,7 @@
 &kp MINUS  &kp N0    &kp N9     &kp N8     &kp N7    &kp N6                                  &kp N5  &kp N4    &kp N3    &kp N2     &kp N1  &kp ESC
 &kp GRAVE  &kp SEMI  &kp Y      &kp U      &kp L     &kp J                                   &kp G   &kp P     &kp F     &kp W      &kp Q   &kp TAB
 &kp SQT    &kp O     &kp I      &kp E      &kp N     &kp H                                   &kp D   &kp T     &kp S     &kp R      &kp A   &kp BSPC
-&kp RSHFT  &kp FSLH  &kp DOT    &kp COMMA  &kp M     &kp K   &kp C_PLAY_PAUSE    &kp C_MUTE  &kp B   &kp V     &kp C     &kp X      &kp Z   &kp LSHFT
+&sk RSHFT  &kp FSLH  &kp DOT    &kp COMMA  &kp M     &kp K   &kp C_PLAY_PAUSE    &kp C_MUTE  &kp B   &kp V     &kp C     &kp X      &kp Z   &sk LSHFT
                      &kp RCTRL  &kp RGUI   &kp RALT  &trans  &trans              &trans      &trans  &kp LALT  &kp LGUI  &kp LCTRL
             >;
 
