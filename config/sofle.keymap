@@ -106,7 +106,7 @@
         mod_a {
             bindings = <
 &kp EQUAL        &kp LBKT  &kp RBKT   &trans    &trans         &trans                      &kp F10             &kp F11             &kp F12             &trans           &trans         &trans
-&kp NON_US_HASH  &mkp MB4  &mkp MB2   &mkp MB3  &mkp MB1       &mkp MB5                    &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &kp KP_NUMLOCK
+&kp NON_US_HASH  &none     &none      &none     &none          &none                       &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &kp KP_NUMLOCK
 &kp DELETE       &kp INS   &kp PG_UP  &kp UP    &kp PAGE_DOWN  &kp HOME                    &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &kp DEL
 &trans           &kp NUBS  &kp LEFT   &kp DOWN  &kp RIGHT      &kp END   &trans    &trans  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL   &trans
                            &trans     &trans    &trans         &trans    &trans    &trans  &trans              &kp KP_NUMBER_0     &trans              &trans
@@ -127,11 +127,11 @@
             //               |     |      |      |      |        |  |       |      |       |       |      |
 
             bindings = <
-&trans          &trans           &trans           &kp F10             &kp F11             &kp F12                               &trans         &trans    &trans     &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
-&kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_MULTIPLY  &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9                    &mkp MB4       &mkp MB1  &mkp MCLK  &mkp RCLK         &mkp MB5           &kp NON_US_HASH
-&kp DELETE      &kp KP_SUBTRACT  &kp KP_PLUS      &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6                    &kp PG_UP      &kp HOME  &kp UP     &kp END           &kp INS            &kp DELETE
-&trans          &kp KP_EQUAL     &kp KP_DOT       &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN   &kp RIGHT         &kp NUBS           &trans
-                                 &trans           &trans              &kp KP_N0           &trans              &trans    &trans  &trans         &trans    &trans     &trans
+&trans          &trans           &trans           &kp F10             &kp F11             &kp F12                               &trans         &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
+&kp KP_NUMLOCK  &kp KP_DIVIDE    &kp KP_MULTIPLY  &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9                    &none          &none     &none     &none             &none              &kp NON_US_HASH
+&kp DELETE      &kp KP_SUBTRACT  &kp KP_PLUS      &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6                    &kp PG_UP      &kp HOME  &kp UP    &kp END           &kp INS            &kp DELETE
+&trans          &kp KP_EQUAL     &kp KP_DOT       &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT         &kp NUBS           &trans
+                                 &trans           &trans              &kp KP_N0           &trans              &trans    &trans  &trans         &trans    &trans    &trans
             >;
         };
 
