@@ -51,14 +51,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_L";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&kp CAPS>;
+            bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
 
         shift_caps_r: shift_caps_r {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_R";
             #binding-cells = <0>;
-            bindings = <&sk RSHFT>, <&kp CAPS>;
+            bindings = <&kp RIGHT_SHIFT>, <&kp CAPS>;
         };
 
         hlt: hlt {
