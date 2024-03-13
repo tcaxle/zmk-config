@@ -129,19 +129,7 @@
         };
 
         mod_a {
-            bindings = <
-&kp EQUAL        &kp LBKT  &kp RBKT  &trans    &trans     &trans                           &kp F10             &kp F11             &kp F12             &trans           &trans         &trans
-&kp NON_US_HASH  &none     &none     &none     &none      &none                            &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &kp KP_NUMLOCK
-&kp DELETE       &kp INS   &kp HOME  &kp UP    &kp END    &kp PG_UP                        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &kp DEL
-&trans           &kp NUBS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans    &trans  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL   &trans
-                           &trans    &trans    &trans     &trans         &trans    &trans  &trans              &kp KP_NUMBER_0     &trans              &trans
-            >;
-
             label = "Mod A";
-        };
-
-        mod_b {
-            label = "Mod B";
 
             // TODO: Some binds are waiting for shifted keycode support.
             // ------------------------------------------------------------------------------------------------------------
@@ -158,6 +146,18 @@
 &trans          &kp KP_EQUAL     &kp KP_DOT       &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT         &kp NUBS           &trans
                                  &trans           &trans              &kp KP_N0           &trans              &trans    &trans  &trans         &trans    &trans    &trans
             >;
+        };
+
+        mod_b {
+            bindings = <
+&kp EQUAL        &kp LBKT  &kp RBKT  &trans    &trans     &trans                           &kp F10             &kp F11             &kp F12             &trans           &trans         &trans
+&kp NON_US_HASH  &none     &none     &none     &none      &none                            &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp KP_ASTERISK  &kp KP_DIVIDE  &kp KP_NUMLOCK
+&kp DELETE       &kp INS   &kp HOME  &kp UP    &kp END    &kp PG_UP                        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp KP_PLUS      &kp KP_MINUS   &kp DEL
+&trans           &kp NUBS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans    &trans  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &kp KP_DOT       &kp KP_EQUAL   &trans
+                           &trans    &trans    &trans     &trans         &trans    &trans  &trans              &kp KP_NUMBER_0     &trans              &trans
+            >;
+
+            label = "Mod B";
         };
 
         qwerty {
