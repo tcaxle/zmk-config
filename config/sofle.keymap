@@ -51,14 +51,14 @@
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_L";
             #binding-cells = <0>;
-            bindings = <&sk LSHFT>, <&kp CAPS>;
+            bindings = <&kp LSHFT>, <&kp CAPS>;
         };
 
         shift_caps_r: shift_caps_r {
             compatible = "zmk,behavior-tap-dance";
             label = "SHIFT_CAPS_R";
             #binding-cells = <0>;
-            bindings = <&sk RSHFT>, <&kp CAPS>;
+            bindings = <&kp RSHFT>, <&kp CAPS>;
         };
 
         hlt: hlt {
@@ -130,7 +130,7 @@
 &kp TAB         &kp Q      &kp W      &kp F         &kp P      &kp G                                      &kp J      &kp L      &kp U          &kp Y              &kp SEMI    &kp GRAVE
 &kp BSPC        &kp A      &kp R      &kp S         &kp T      &kp D                                      &kp H      &kp N      &kp E          &kp I              &kp O       &kp SINGLE_QUOTE
 &shift_caps_l   &kp Z      &kp X      &kp C         &kp V      &kp B      &kp C_MUTE    &kp C_PLAY_PAUSE  &kp K      &kp M      &kp COMMA      &kp DOT            &kp FSLH    &shift_caps_r
-                           &sk LCTRL  &sk LEFT_WIN  &sk LALT   &mtd       &mo 1         &mo 1             &mtd       &sk RALT   &sk RIGHT_WIN  &sk RIGHT_CONTROL
+                           &kp LCTRL  &kp LEFT_WIN  &kp LALT   &mtd       &mo 1         &mo 1             &mtd       &kp RALT   &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
@@ -141,8 +141,8 @@
 &th F11 MINUS   &th F10 N0  &th F9 N9  &th F8 N8  &th F7 N7  &th F6 N6                                  &th F5 N5  &th F4 N4  &th F3 N3  &th F2 N2  &th F1 N1  &th F12 ESCAPE
 &kp GRAVE       &kp SEMI    &kp Y      &kp U      &kp L      &kp J                                      &kp G      &kp P      &kp F      &kp W      &kp Q      &kp TAB
 &kp SQT         &kp O       &kp I      &kp E      &kp N      &kp H                                      &kp D      &kp T      &kp S      &kp R      &kp A      &kp BSPC
-&sk LEFT_SHIFT  &kp FSLH    &kp DOT    &kp COMMA  &kp M      &kp K      &kp C_PLAY_PAUSE    &kp C_MUTE  &kp B      &kp V      &kp C      &kp X      &kp Z      &sk RIGHT_SHIFT
-                            &sk RCTRL  &sk RGUI   &sk RALT   &trans     &trans              &trans      &trans     &sk LALT   &sk LGUI   &sk LCTRL
+&kp LEFT_SHIFT  &kp FSLH    &kp DOT    &kp COMMA  &kp M      &kp K      &kp C_PLAY_PAUSE    &kp C_MUTE  &kp B      &kp V      &kp C      &kp X      &kp Z      &kp RIGHT_SHIFT
+                            &kp RCTRL  &kp RGUI   &kp RALT   &trans     &trans              &trans      &trans     &kp LALT   &kp LGUI   &kp LCTRL
             >;
 
             label = "Mirrored";
@@ -152,7 +152,7 @@
             bindings = <
 &kp EQUAL        &kp LBKT  &kp RBKT  &trans    &trans     &trans                           &trans              &trans              &trans              &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
 &kp NON_US_HASH  &none     &none     &none     &none      &none                            &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9  &kp KP_ASTERISK   &kp KP_DIVIDE      &kp NON_US_HASH
-&kp DELETE       &kp INS   &kp HOME  &kp UP    &kp END    &kp PG_UP                        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp KP_PLUS       &kp KP_MINUS       &kp DEL
+&kp DELETE       &kp INS   &kp HOME  &kp UP    &kp END    &kp PG_UP                        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6  &kp KP_PLUS       &kp KP_MINUS       &kp BACKSPACE
 &kp LSHIFT       &kp NUBS  &kp LEFT  &kp DOWN  &kp RIGHT  &kp PAGE_DOWN  &trans    &trans  &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &kp KP_DOT        &kp KP_EQUAL       &kp RSHIFT
                            &trans    &trans    &trans     &trans         &trans    &trans  &trans              &kp KP_NUMBER_0     &trans              &trans
             >;
@@ -174,7 +174,7 @@
             bindings = <
 &kp EQUAL       &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &trans              &trans              &trans                                &trans         &trans    &trans    &kp LEFT_BRACKET  &kp RIGHT_BRACKET  &kp EQUAL
 &kp KP_NUMLOCK  &kp KP_DIVIDE     &kp KP_MULTIPLY    &mt F7 KP_NUMBER_7  &mt F8 KP_NUMBER_8  &mt F9 KP_NUMBER_9                    &none          &none     &none     &none             &none              &kp NON_US_HASH
-&kp DELETE      &kp KP_SUBTRACT   &kp KP_PLUS        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6                    &kp PG_UP      &kp HOME  &kp UP    &kp END           &kp INS            &kp DELETE
+&kp BACKSPACE   &kp KP_SUBTRACT   &kp KP_PLUS        &mt F4 KP_NUMBER_4  &mt F5 KP_NUMBER_5  &mt F6 KP_NUMBER_6                    &kp PG_UP      &kp HOME  &kp UP    &kp END           &kp INS            &kp DELETE
 &kp LEFT_SHIFT  &kp KP_EQUAL      &kp KP_DOT         &mt F1 KP_NUMBER_1  &mt F2 KP_NUMBER_2  &mt F3 KP_NUMBER_3  &trans    &trans  &kp PAGE_DOWN  &kp LEFT  &kp DOWN  &kp RIGHT         &kp NUBS           &kp RIGHT_SHIFT
                                   &trans             &trans              &kp KP_N0           &tog 3              &trans    &trans  &tog 3         &trans    &trans    &trans
             >;
