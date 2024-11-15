@@ -133,7 +133,9 @@
                            &kp LCTRL  &kp LEFT_WIN  &kp LALT   &mtd       &mo 1         &mo 1             &mtd       &kp RALT   &kp RIGHT_WIN  &kp RIGHT_CONTROL
             >;
 
-            sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOLUME_UP>;
+            sensor-bindings =
+                <&inc_dec_kp C_VOL_DN C_VOLUME_UP>,
+                <&inc_dec_kp K_SCROLL_DOWN K_SCROLL_UP>;
         };
 
         mirrored {
