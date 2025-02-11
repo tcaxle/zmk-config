@@ -213,8 +213,8 @@
 
         conf {
             bindings = <
-&sys_reset   &hbt BT_SEL 0 0   &hbt BT_SEL 0 1   &hbt BT_SEL 0 2    &hbt BT_SEL 0 3   &hbt BT_SEL 0 4                     &trans  &trans  &trans  &trans  &trans  &trans
-&bootloader  &hbt BT_DISC 0 0  &hbt BT_DISC 0 1  &hbt BT_DISC 0 2   &hbt BT_DISC 0 3  &hbt BT_DISC 0 4                    &trans  &trans  &trans  &trans  &trans  &trans
+&sys_reset   &hbt BT_SEL 0 0   &hbt BT_SEL 0 1   &hbt BT_SEL 0 2    &hbt BT_SEL 0 3   &hbt BT_SEL 0 4                     &trans  &trans  &trans  &trans  &trans  &sys_reset
+&bootloader  &hbt BT_DISC 0 0  &hbt BT_DISC 0 1  &hbt BT_DISC 0 2   &hbt BT_DISC 0 3  &hbt BT_DISC 0 4                    &trans  &trans  &trans  &trans  &trans  &bootloader
 &trans       &trans            &out OUT_USB      &hbt BT_CLR_ALL 0  &out OUT_BLE      &trans                              &trans  &trans  &trans  &trans  &trans  &trans
 &trans       &trans            &hbt BT_PRV 0     &hbt BT_CLR 0      &hbt BT_NXT 0     &trans            &trans    &trans  &trans  &trans  &trans  &trans  &trans  &trans
                                &trans            &trans             &trans            &trans            &trans    &trans  &trans  &trans  &trans  &trans
