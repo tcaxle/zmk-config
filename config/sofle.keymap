@@ -46,7 +46,7 @@
             compatible = "zmk,behavior-tap-dance";
             label = "Mod-Tap-Dance";
             #binding-cells = <0>;
-            bindings = <&mo 2>, <&tog 3>;
+            bindings = <&mo 2>, <&tog 3>, <&sl 5>;
         };
 
         shift_caps_l: shift_caps_l {
@@ -121,11 +121,6 @@
         R_ENTER {
             bindings = <&kp ENTER>;
             key-positions = <21 20>;
-        };
-
-        conf_layer {
-            bindings = <&sl 5>;
-            key-positions = <53 56>;
         };
     };
 
